@@ -1,0 +1,39 @@
+.theme-src{}
+/* ===== parent-myth-check theme ===== */
+:root{
+  --color-paper: #F7F5EF;
+  --color-surface: #FFFFFF;
+  --color-ink: #1A1A1A;
+  --color-muted: #555048;
+  --color-line: #DAD6CC;
+  --color-track: #E8E5DC;
+  --color-accent: #B42318;
+  --color-grid: #E8E5DC;
+  --color-ok: #2E7D4F;
+  --font-sans: "Libre Franklin","Noto Sans Kannada","Noto Sans Telugu","Noto Sans Devanagari","Atkinson Hyperlegible",system-ui,sans-serif;
+  --font-display: "DM Serif Display","Noto Sans Kannada","Noto Sans Telugu","Noto Sans Devanagari","Atkinson Hyperlegible",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+  --color-paper: #121210;
+  --color-surface: #1C1B18;
+  --color-ink: #EEEBE4;
+  --color-accent: #F2776B;
+  --color-grid: #211F1B;
+  --color-muted: #A3B1C2;
+  --color-line: #2B3A4B;
+  --color-track: #22303F;
+  }
+}
+body{
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+h1,h2,h3,h4{ font-family: var(--font-display); }
+header.bg-ink{
+  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
